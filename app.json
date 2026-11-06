@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0B201B"
+      },
+      "package": "app.rainhaven.sleep",
+      "permissions": [
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+        "android.permission.WAKE_LOCK"
+      ]
+    },
+    "experiments": {
+      "typedRoutes": false
+    },
+    "ios": {
+      "bundleIdentifier": "app.rainhaven.sleep",
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "audio"
+        ]
+      },
+      "supportsTablet": true
+    },
+    "name": "Lullhaven",
+    "newArchEnabled": true,
+    "orientation": "portrait",
+    "plugins": [
+      "expo-router",
+      "expo-splash-screen",
+      [
+        "expo-audio",
+        {
+          "enableBackgroundPlayback": true,
+          "enableBackgroundRecording": false,
+          "recordAudioAndroid": false
+        }
+      ],
+      "expo-sharing"
+    ],
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "scheme": "rainhaven",
+    "slug": "rainhaven",
+    "userInterfaceStyle": "dark",
+    "version": "1.1.0",
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+    }
+  }
+}
